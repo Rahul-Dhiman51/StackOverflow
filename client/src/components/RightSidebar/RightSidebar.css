@@ -66,3 +66,8 @@
     font-size: 13px;
   }
   
+  @media screen and (max-width: 1020px) {
+    .right-sidebar {
+      display: none;
+    }
+  }

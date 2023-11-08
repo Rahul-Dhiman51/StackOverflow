@@ -86,3 +86,15 @@
     background-color: #edeff0;
     color: #39739d;
 }
+
+@media screen and (max-width: 1020px) {
+    .main-bar {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 740px) {
+    .display-question-container .display-votes-ans {
+      padding: 10px;
+    }
+  }

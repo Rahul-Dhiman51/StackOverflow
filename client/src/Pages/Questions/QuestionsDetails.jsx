@@ -38,6 +38,7 @@ const QuestionsDetails = () => {
 				dispatch(postAnswer({ id, noOfAnswers: answerLength + 1, answerBody: Answer, userAnswered: User.result.name, userId: User?.result._id }))
 			}
 		}
+		setAnswer('')
 	}
 
 	const handleShare = () => {
@@ -115,7 +116,7 @@ const QuestionsDetails = () => {
 									<section className="post-ans-container">
 										<h3>Your Answer</h3>
 										<form onSubmit={(e) => { handlePostAns(e, question.answer.length) }}>
-											<textarea name="" id="" cols="30" rows="10" onChange={e => { setAnswer(e.target.value) }}></textarea>
+											<textarea name="" id="" cols="30" rows="10" value={Answer} onChange={e => { setAnswer(e.target.value) }}></textarea>
 											<input type="submit" className="post-ans-btn" value="Post Your Answer" />
 										</form>
 										<p>
